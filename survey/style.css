@@ -1,13 +1,13 @@
 body {
+    background: linear-gradient(90deg, rgb(58, 58, 158), rgb(91, 91, 146));
     text-align: center;
-    background: linear-gradient(90deg, rgb(58, 58, 158), rgb(91, 91, 146))
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 #header {
+    text-align: center;
     margin-top: 5vh;
-    color: white;
-    opacity: 85%;
-    font-family: 'Poppins', sans-serif;
 }
 
 #title {
@@ -15,8 +15,31 @@ body {
     font-weight: 400;
 }
 
-#subtitle {
+#description {
     font-weight: 200;
     font-style: italic;
-    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+}
+
+#survey-form {
+    background-color: rgba(27, 27, 50, 0.8);
+    border-radius: 4px;
+    padding: 40px;
+}
+
+label {
+    box-sizing: border-box;
+}
+
+div.container {
+    width: 600px;
+    margin: 30px auto;
+}
+
+input {
+    border-radius: 5px;
+    appearance: auto;
+    width: 100%;
+    margin: 15px auto;
+    padding: 6px 12px;
+    border: 1px rgba(0, 0, 0, .8) solid;
 }
