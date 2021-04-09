@@ -22,28 +22,40 @@ body {
 
 #survey-form {
     background-color: rgba(27, 27, 50, 0.8);
-    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     padding: 40px;
     text-align: left;
+    height: 100%;
+}
+
+#radio-last {
+    margin-bottom: 30px;
 }
 
 div.container {
     width: 650px;
     margin: 30px auto;
+    height: 100%;
 }
 
-label {
+label, span, #survey-form > p {
     font-size: 18px;
 }
 
-input {
+#email, #name, #number, select {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 4px;
     appearance: auto;
-    margin: 15px auto;
+    margin: 0 auto 30px;
     padding: 6px 12px;
     border: 1px rgba(0, 0, 0, .8) solid;
+}
+
+input[type='radio'] { 
+    transform: scale(1.5);
+    margin: 7px 10px;
 }
