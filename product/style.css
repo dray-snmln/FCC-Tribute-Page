@@ -1,6 +1,18 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
     background: gray;
     font-family: 'Rubik', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 #nav-bar {
@@ -14,24 +26,20 @@ body {
     max-height: 8vh;
     text-align: center;
     padding: 5px;
-    justify-content: space-around;
-}
-
-#nav-bar > .content {
-    display: flex;
-}
-
-#space {
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 #nav-items {
-    display: flex;
+    display: grid;
+    justify-content: right;
 }
 
 #logo {
     font-family: 'Train One', serif;
     font-size: 35px;
+    display: grid;
+    justify-content: left;
 }
 
 #header {
