@@ -1,20 +1,23 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+    color: aliceblue;
 }
 
 body {
     margin: 0px;
     padding: 0px;
     min-height: 100vh;
-    background: gray;
+    background: rgb(104, 105, 92);
     font-family: 'Rubik', sans-serif;
+    text-align: center;
+    justify-content: center;
+    display: grid;
 }
 
 #nav-bar {
-    position: absolute;
-    background: #194350;
-    color: aliceblue;
+    position: fixed;
+    background: #919677;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -35,13 +38,13 @@ body {
     align-content: center;
 }
 
-.nav-links {
+.nav-link {
     text-decoration: none;
     color: inherit;
 }
 
-.nav-links:hover {
-    color: lightslategray;
+.nav-link:hover {
+    color: rgb(181, 189, 160);
 }
 
 #logo {
@@ -54,11 +57,73 @@ body {
 }
 
 #header {
+    max-width: 80vw;
+    display: grid;
     margin-top: 9vh;
+    justify-content: center;
+}
+
+#title {
+    margin: 15px 0px auto;
+}
+
+.header-div {
     text-align: center;
 }
 
+#form {
+    margin: 30px auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+input[type="email"] {
+    width: 300px;
+    padding: 8px;
+    border-radius: 2px;
+    border: none;
+    margin: 10px;
+}
+
+#submit {
+    font-family: 'Rubik';
+    font-size: large;
+    margin: auto;
+    text-align: center;
+    display: inherit;
+    color: whitesmoke;
+    background-color: rgb(177, 156, 36);
+    border: 1px solid black;
+    padding: 5px;
+    width: 40%;
+}
+
+#video {
+    margin: 2vh;
+}
+
+@media (max-width: 800px){
+    #video{ margin: auto;}
+}
+
+#features {
+    margin-top: 60vh;
+    height: 100px;
+}
+
+#how-it-works {
+    height: 100px;
+}
+
 #footer {
-    position: fixed;
-    bottom: 0;
+    background: #ffffff;
+    width: 100%;
+    height: 100px;
+    padding: 55px 10px;
+    max-height: 55px;
+    max-width: 100%;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
 }
