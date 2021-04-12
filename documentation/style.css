@@ -1,34 +1,45 @@
-nav {grid-area: nav;}
-main {grid-area: main;}
 a {text-decoration: none; color: black;}
 a:hover {color: red}
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
 
+nav {grid-area: nav;}
+main {grid-area: main;}
 #container {
     top: 0;
     left: 0;
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: absolute;
     max-height: 100%;
     display: grid;
     grid-template-areas: "nav main";
-    grid-template-columns:  repeat(auto-fit, 2fr);
-    overflow: hidden;
+    grid-template-columns:  repeat(2fr);
 }
 
 @media (max-width: 900px) {
-    nav, main {position: ;}
     #navbar header { width: auto; font-size: 1.7rem !important;}
     #navbar {
-        font-size: auto;
         height: 25vh;
-        overflow-x: hidden;
+        overflow-x:visible;
         overflow-y: scroll;
         padding: 5px 10px !important;
     }
     #container {
         grid-template-areas: "nav" "main";
         grid-template-columns:  1fr;
+        height: 100vh;
     }
 }
 
@@ -59,9 +70,6 @@ main {
     overflow-x: hidden;
     max-height: 100vh;
     padding: 0px 20px;
-}
-
-#main-doc {
     background-color: cadetblue;
 }
 
@@ -72,5 +80,5 @@ header {
 }
 
 section {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
