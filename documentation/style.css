@@ -1,31 +1,76 @@
-html {
-    background-color: rgb(56, 56, 56);
-    background-color: #fff;
-}
+nav {grid-area: nav;}
+main {grid-area: main;}
+a {text-decoration: none; color: black;}
+a:hover {color: red}
 
 #container {
-    margin: 0px;
-}
-
-#nav-bar {
-    background-color: gray; 
     top: 0;
     left: 0;
-    min-height: 60vh;
-    width: 300px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    max-height: 100%;
+    display: grid;
+    grid-template-areas: "nav main";
+    grid-template-columns:  repeat(auto-fit, 2fr);
+    overflow: hidden;
 }
 
-@media only screen and (max-width: 800px) {
-    #nav-bar {
-        position: absolute;
-        z-index: 1;
+@media (max-width: 900px) {
+    nav, main {position: ;}
+    #navbar header { width: auto; font-size: 1.7rem !important;}
+    #navbar {
+        font-size: auto;
+        height: 25vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding: 5px 10px !important;
+    }
+    #container {
+        grid-template-areas: "nav" "main";
+        grid-template-columns:  1fr;
     }
 }
 
-#main { 
-    margin-left: 300px;
+#navbar {
+    max-height: inherit;
+    min-width: 300px;
+    background-color: gray;
     padding: 20px;
-    position: absolute;
+}
+
+#navbar ul {
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar ul li {
+    width: 100%;
+    font-size: larger;
+    list-style-type: none;
+    text-decoration: none !important;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, .5);    
+}
+
+main {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 100vh;
+    padding: 0px 20px;
+}
+
+#main-doc {
     background-color: cadetblue;
-    min-height: 90vh;
+}
+
+header {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}
+
+section {
+    margin-bottom: 2rem;
 }
