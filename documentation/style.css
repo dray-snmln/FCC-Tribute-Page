@@ -1,5 +1,5 @@
 *{font-family: 'Rubik';}
-a {text-decoration: none; color: black;}
+a {text-decoration: none; color: rgb(255, 255, 255);}
 a:hover {color: rgb(206, 179, 179)}
 code {
     display: block;
@@ -30,6 +30,7 @@ main {grid-area: main;}
 }
 
 @media (max-width: 900px) {
+    #intro_duction {margin-top: 0;}
     #navbar header { width: auto; font-size: 1.7rem !important;}
     #navbar {
         height: 25vh;
@@ -47,6 +48,7 @@ main {grid-area: main;}
 #navbar {
     max-height: inherit;
     min-width: 300px;
+    color: whitesmoke;
     background-color: rgb(199, 36, 36);
     padding: 20px;
 }
