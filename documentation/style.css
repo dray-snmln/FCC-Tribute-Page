@@ -1,5 +1,6 @@
+*{font-family: 'Rubik';}
 a {text-decoration: none; color: black;}
-a:hover {color: red}
+a:hover {color: rgb(206, 179, 179)}
 code {
     display: block;
     text-align: left;
@@ -46,7 +47,7 @@ main {grid-area: main;}
 #navbar {
     max-height: inherit;
     min-width: 300px;
-    background-color: gray;
+    background-color: rgb(199, 36, 36);
     padding: 20px;
 }
 
@@ -70,7 +71,7 @@ main {
     overflow-x: hidden;
     max-height: 100vh;
     padding: 0px 20px;
-    background-color: cadetblue;
+    background-color: rgb(255, 255, 255);
 }
 
 header {
